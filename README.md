@@ -14,13 +14,13 @@
 
 * Compilation
 
-        # repo init -u git://github.com/fire855/android.git -b cm-12.1
+        # repo init -u git://github.com/tandob-mtk/android.git -b cm-13.0-mt6592
         
-        # repo sync
+        # repo sync -j1 -f --force-sync --no-clone-bundle
         
         # source build/envsetup.sh
         
-        # brunch cm_k1_turbo-userdebug
+        # brunch cm_E313-userdebug
 
 # MTK
 
