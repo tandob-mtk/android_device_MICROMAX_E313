@@ -107,21 +107,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
-# NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    nfcstackp \
-    libmtknfc_dynamic_load_jni \
-    libnfc_mt6605_jni \
-    Nfc \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
-
 # Torch
 PRODUCT_PACKAGES += \
     Torch
