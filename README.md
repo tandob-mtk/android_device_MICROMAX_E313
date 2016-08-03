@@ -8,7 +8,6 @@
   * Sensors
   * Camera (photo and video recording)
   * GPS
-  * NFC
   * OTG
   * Tethering (Wifi, Bluetooth and USB)
 
