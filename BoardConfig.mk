@@ -23,6 +23,13 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6592
 WITH_DEXPREOPT := true
 DONT_DEXPREOPT_PREBUILTS := true
 
+TARGET_USERIMAGES_USE_EXT4:=true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
+
+# Flags
+TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+
 # Kernel
 BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
@@ -118,6 +125,9 @@ BOARD_SEPOLICY_DIRS := \
 
 # Use old sepolicy version
 POLICYVERS := 26
+
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
 
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
