@@ -19,7 +19,9 @@ TARGET_CPU_VARIANT := cortex-a7
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6592
 
-TARGET_USERIMAGES_USE_EXT4 := true
+# Enable dex-preoptimization
+WITH_DEXPREOPT := true
+DONT_DEXPREOPT_PREBUILTS := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE :=
