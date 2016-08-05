@@ -119,3 +119,9 @@ POLICYVERS := 26
 
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
+# Release tools
+TARGET_RELEASETOOLS_EXTENSIONS := device/Lenovo/S650_ROW/releasetools
+
+# Include Open GApps
+INCLUDE_OPEN_GAPPS := true
