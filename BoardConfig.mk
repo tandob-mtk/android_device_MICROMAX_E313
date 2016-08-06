@@ -23,9 +23,6 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6592
 WITH_DEXPREOPT := true
 DONT_DEXPREOPT_PREBUILTS := true
 
-TARGET_USERIMAGES_USE_EXT4:=true
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
-
 # Flags
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -133,7 +130,7 @@ USE_MINIKIN := true
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # Release tools
-TARGET_RELEASETOOLS_EXTENSIONS := device/Lenovo/S650_ROW/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/Micromax/E313/releasetools
 
 # Include Open GApps
 INCLUDE_OPEN_GAPPS := true
