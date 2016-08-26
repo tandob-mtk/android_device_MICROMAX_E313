@@ -50,6 +50,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images \
+    libnl_2 \
+    libtinyxml
+
 # GSM
 PRODUCT_PACKAGES += \
     gsm0710muxd \
@@ -125,6 +132,10 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 $(call inherit-product, build/target/product/full.mk)
 
